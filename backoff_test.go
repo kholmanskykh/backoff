@@ -141,6 +141,23 @@ func TestConcurrent(t *testing.T) {
 	wg.Wait()
 }
 
+// func TestAtomicOperation_With32BitAttempt(t *testing.T) {
+// 	type testStruct struct {
+// 		name string
+// 		senderID string
+// 		address string
+// 		misc uint32
+// 		bOff Backoff
+// 	}
+
+// 	inst := testStruct{}
+// 	inst.bOff.attempt = 17
+
+// 	expect := 18
+// 	actual := atomic.AddUint32(&inst.bOff.attempt, 1)
+// 	equals(t, uint32(expect), uint32(actual))
+// }
+
 func between(t *testing.T, actual, low, high time.Duration) {
 	t.Helper()
 	if actual < low {
