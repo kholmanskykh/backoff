@@ -1,6 +1,3 @@
-//go:build 386 && arm && arm.7 && mipsle && mips && wasm
-// +build 386,arm,arm.7,mipsle,mips,wasm
-
 package backoff
 
 import (
