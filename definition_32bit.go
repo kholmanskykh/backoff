@@ -1,5 +1,3 @@
-// +build 386,arm,mipsle,mips,wasm
-
 package backoff
 
 import (
