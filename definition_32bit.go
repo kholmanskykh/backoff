@@ -1,11 +1,12 @@
-// +build 386,arm,mipsle,mips,wasm
+//go:build 386 && arm && arm.7 && mipsle && mips && wasm
+// +build 386,arm,arm.7,mipsle,mips,wasm
 
 package backoff
 
 import (
 	"math"
 	"sync/atomic"
-    "time"
+	"time"
 )
 
 const maxDuration = float64(math.MaxInt32 - 512)
